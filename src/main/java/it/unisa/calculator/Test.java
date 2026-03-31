@@ -28,22 +28,22 @@ public class Test {
         return calculator.power(firstNumber, secondNumber) == (float) Math.pow(firstNumber, secondNumber);
     }
 
-    public boolean testSin (float firstNumber, float secondNumber) {
+    public boolean testSin (float firstNumber) {
         Calculcator calculator = new Calculcator();
         return calculator.sin(firstNumber) == (float) Math.sin(firstNumber);
     }
 
-    public boolean testCos (float firstNumber, float secondNumber) {
+    public boolean testCos (float firstNumber) {
         Calculcator calculator = new Calculcator();
         return calculator.cos(firstNumber) == (float) Math.cos(firstNumber);
     }
 
-    public boolean testTan (float firstNumber, float secondNumber) {
+    public boolean testTan (float firstNumber) {
         Calculcator calculator = new Calculcator();
         return calculator.tan(firstNumber) == (float) Math.tan(firstNumber);
     }
 
     public boolean testAll (float firstNumber, float secondNumber) {
-        return testSum(firstNumber, secondNumber) && testSubtract(firstNumber, secondNumber) && testMultiply(firstNumber, secondNumber) && testDivide(firstNumber, secondNumber) && testPower(firstNumber, secondNumber) && testSin(firstNumber, secondNumber) && testCos(firstNumber, secondNumber) && testTan(firstNumber, secondNumber);
+        return testSum(firstNumber, secondNumber) && testSubtract(firstNumber, secondNumber) && testMultiply(firstNumber, secondNumber) && testDivide(firstNumber, secondNumber) && testPower(firstNumber, secondNumber) && testSin(firstNumber) && testCos(firstNumber) && testTan(firstNumber);
     }
 }
