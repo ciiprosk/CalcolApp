@@ -67,11 +67,7 @@ public class Calculator{
         return lastResult;
     }
 
-    public float divide (float firstNumber, float secondNumber) throws ZeroException {
-
-        if (secondNumber == 0) {
-            throw new ZeroException("Errore: Non puoi dividere per zero un numero!");
-        }
+    public float divide (float firstNumber, float secondNumber) {
 
         setLastResult(firstNumber / secondNumber);
         return lastResult;

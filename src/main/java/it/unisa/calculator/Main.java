@@ -1,5 +1,6 @@
 package it.unisa.calculator;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -34,7 +35,7 @@ public class Main {
 
             float n2 = 0;
             // Chiediamo il secondo numero solo se NON è una funzione trigonometrica
-            if (!operazione.equals("sin") && !operazione.equals("cos") && !operazione.equals("tan")) {
+            if (!operazione.equals("sin") && !operazione.equals("cos") && !operazione.equals("tan") && !operazione.equals("history")) {
                 System.out.print("Inserisci il secondo numero: ");
                 try {
                     n2 = input.nextFloat();
@@ -73,6 +74,9 @@ public class Main {
                     break;
                 case "tan":
                     miaCalcolatrice.tan(n1);
+                    break;
+                case "history":
+                    System.out.println(miaCalcolatrice.toString());
                     break;
                 default:
                     System.out.println("Operazione non riconosciuta!");
