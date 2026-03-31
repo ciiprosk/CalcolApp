@@ -1,22 +1,24 @@
 package it.unisa.calculator;
 
 import java.util.ArrayDeque;
-import java.util.Queue;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Calculator{
     private float firstNumber;
     private float secondNumber;
     private float lastResult;
-    private Queue<Float> history;
+    private List<Float> history;
 
 
     public Calculator() {
-        history = new ArrayDeque<>(10);
+        history = new ArrayList<>(10);
     }
     public Calculator(int firstNumber, int secondNumber) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
-        history = new ArrayDeque<>(10);
+        history = new ArrayList<>(10);
     }
 
     public float getLastResult() {

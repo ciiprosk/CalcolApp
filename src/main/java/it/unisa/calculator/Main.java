@@ -8,7 +8,7 @@ public class Main {
         Calculator miaCalcolatrice = new Calculator();
 
         System.out.println("--- Calcolatrice Java ---");
-
+        
         System.out.print("Inserisci il numero (o il primo numero): ");
         float n1 = input.nextFloat();
 
