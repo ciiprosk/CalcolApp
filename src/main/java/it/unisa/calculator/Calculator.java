@@ -62,22 +62,22 @@ public class Calculator {
     }
 
     public float power (float firstNumber, float secondNumber) {
-        setLastResult(Math.pow(firstNumber, secondNumber));
+        setLastResult((float) Math.pow(firstNumber, secondNumber));
         return lastResult;
     }
 
     public float sin (float firstNumber) {
-        setLastResult(Math.sin(firstNumber));
+        setLastResult((float) Math.sin(firstNumber));
         return lastResult;
     }
 
     public float cos (float firstNumber) {
-        setLastResult(Math.cos(firstNumber));
+        setLastResult((float) Math.cos(firstNumber));
         return lastResult;
     }
 
     public float tan (float firstNumber) {
-        setLastResult(Math.tan(firstNumber));
+        setLastResult((float) Math.tan(firstNumber));
         return lastResult;
     }
 
