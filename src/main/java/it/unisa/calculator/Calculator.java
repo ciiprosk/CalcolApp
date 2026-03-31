@@ -44,7 +44,9 @@ public class Calculator{
     }
 
     public void setLastResult(float lastResult) {
-
+        if (history.size() >= 10) {
+            history.remove(0);
+        }
         this.lastResult = lastResult;
         history.add(lastResult);
     }
