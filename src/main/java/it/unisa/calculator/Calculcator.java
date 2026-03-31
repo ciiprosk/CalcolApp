@@ -7,6 +7,9 @@ public class Calculcator {
     private float lastResult;
 
 
+    public Calculcator() {
+
+    }
     public Calculcator(int firstNumber, int secondNumber) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
