@@ -68,9 +68,14 @@ public class Calculator{
     }
 
     public float divide (float firstNumber, float secondNumber) {
+
+        if (secondNumber == 0) {
+            throw new ZeroException("Errore: Non puoi dividere per zero un numero!");
+        }
+
         setLastResult(firstNumber / secondNumber);
         return lastResult;
-    }
+    }  
 
     public float power (float firstNumber, float secondNumber) {
         setLastResult((float) Math.pow(firstNumber, secondNumber));
