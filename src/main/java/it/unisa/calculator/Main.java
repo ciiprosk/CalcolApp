@@ -25,21 +25,27 @@ public class Main {
         switch (operazione) {
             case "+":
                 miaCalcolatrice.sum(n1, n2);
+                System.out.println(miaCalcolatrice.getLastResult());
                 break;
             case "-":
                 miaCalcolatrice.subtract(n1, n2);
+                System.out.println(miaCalcolatrice.getLastResult());
                 break;
             case "*":
                 miaCalcolatrice.multiply(n1, n2);
+                System.out.println(miaCalcolatrice.getLastResult());
                 break;
             case "/":
                 miaCalcolatrice.divide(n1, n2);
+                System.out.println(miaCalcolatrice.getLastResult());
                 break;
             case "^":
                 miaCalcolatrice.power(n1, n2);
+                System.out.println(miaCalcolatrice.getLastResult());
                 break;
             default:
                 System.out.println("Operazione non riconosciuta!");
+                System.out.println(miaCalcolatrice.getLastResult());
                 operazioneValida = false;
         }
 

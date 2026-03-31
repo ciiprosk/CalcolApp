@@ -15,6 +15,31 @@ public class Calculcator {
         this.secondNumber = secondNumber;
     }
 
+    public float getLastResult() {
+        return lastResult;
+
+    }
+
+    public float getFirstNumber() {
+        return firstNumber;
+
+    }
+
+    public float getSecondNumber() {
+        return secondNumber;
+
+    }
+    public void setFirstNumber(float firstNumber) {
+        this.firstNumber = firstNumber;
+    }
+
+    public void setSecondNumber(float secondNumber) {
+        this.secondNumber = secondNumber;
+    }
+
+    public void setLastResult(float lastResult) {
+        this.lastResult = lastResult;
+    }
     public float sum (float firstNumber, float secondNumber) {
         lastResult = firstNumber + secondNumber;
         return lastResult;
