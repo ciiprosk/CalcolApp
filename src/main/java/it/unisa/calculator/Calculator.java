@@ -97,4 +97,23 @@ public class Calculator{
         return lastResult;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Cronologia ultimi calcoli: [");
+        
+
+        for (int i = 0; i < history.size(); i++) {
+            sb.append(history.get(i));
+            
+            // Aggiungiamo una virgola e uno spazio se non è l'ultimo elemento
+            if (i < history.size() - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("]");
+        
+        return sb.toString();
+    }
+
 }
