@@ -4,42 +4,42 @@ public class Test {
     // sum, subtract, multiply, divide, power, sin, cos, tan
 
     public boolean testSum (float firstNumber, float secondNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.sum(firstNumber, secondNumber) == firstNumber + secondNumber;
     }
 
     public boolean testSubtract (float firstNumber, float secondNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.subtract(firstNumber, secondNumber) == firstNumber - secondNumber;
     }
 
     public boolean testMultiply (float firstNumber, float secondNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.multiply(firstNumber, secondNumber) == firstNumber * secondNumber;
     }
 
     public boolean testDivide (float firstNumber, float secondNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.divide(firstNumber, secondNumber) == firstNumber / secondNumber;
     }
 
     public boolean testPower (float firstNumber, float secondNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.power(firstNumber, secondNumber) == (float) Math.pow(firstNumber, secondNumber);
     }
 
     public boolean testSin (float firstNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.sin(firstNumber) == (float) Math.sin(firstNumber);
     }
 
     public boolean testCos (float firstNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.cos(firstNumber) == (float) Math.cos(firstNumber);
     }
 
     public boolean testTan (float firstNumber) {
-        Calculcator calculator = new Calculcator();
+        Calculator calculator = new Calculator();
         return calculator.tan(firstNumber) == (float) Math.tan(firstNumber);
     }
 
