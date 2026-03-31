@@ -1,16 +1,16 @@
 
 package it.unisa.calculator;
 
-public class Calculcator {
+public class Calculator {
     private float firstNumber;
     private float secondNumber;
     private float lastResult;
 
 
-    public Calculcator() {
+    public Calculator() {
 
     }
-    public Calculcator(int firstNumber, int secondNumber) {
+    public Calculator(int firstNumber, int secondNumber) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
     }
@@ -22,13 +22,13 @@ public class Calculcator {
 
     public float getFirstNumber() {
         return firstNumber;
-
     }
 
     public float getSecondNumber() {
         return secondNumber;
 
     }
+
     public void setFirstNumber(float firstNumber) {
         this.firstNumber = firstNumber;
     }
@@ -40,43 +40,44 @@ public class Calculcator {
     public void setLastResult(float lastResult) {
         this.lastResult = lastResult;
     }
+
     public float sum (float firstNumber, float secondNumber) {
-        lastResult = firstNumber + secondNumber;
+       setLastResult(firstNumber + secondNumber);
         return lastResult;
     }
 
     public float subtract (float firstNumber, float secondNumber) {
-        lastResult = firstNumber - secondNumber;
+        setLastResult(firstNumber - secondNumber);
         return lastResult;
     }
 
     public float multiply (float firstNumber, float secondNumber) {
-        lastResult= firstNumber * secondNumber;
+        setLastResult(firstNumber * secondNumber);
         return lastResult;
     }
 
     public float divide (float firstNumber, float secondNumber) {
-        lastResult= firstNumber / secondNumber;
+        setLastResult(firstNumber / secondNumber);
         return lastResult;
     }
 
     public float power (float firstNumber, float secondNumber) {
-        lastResult= (float) Math.pow(firstNumber, secondNumber);
+        setLastResult((float) Math.pow(firstNumber, secondNumber));
         return lastResult;
     }
 
     public float sin (float firstNumber) {
-        lastResult= (float) Math.sin(firstNumber);
+        setLastResult((float) Math.sin(firstNumber));
         return lastResult;
     }
 
     public float cos (float firstNumber) {
-        lastResult= (float) Math.cos(firstNumber);
+        setLastResult((float) Math.cos(firstNumber));
         return lastResult;
     }
 
     public float tan (float firstNumber) {
-        lastResult= (float) Math.tan(firstNumber);
+        setLastResult((float) Math.tan(firstNumber));
         return lastResult;
     }
 
