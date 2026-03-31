@@ -100,7 +100,7 @@ public class Calculator{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Cronologia ultimi calcoli: [");
+        sb.append("Cronologia ultimi 10 calcoli: [");
         
 
         for (int i = 0; i < history.size(); i++) {
